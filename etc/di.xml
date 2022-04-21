@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\ObjectManager\Config\Reader\Dom" type="Fom\Annotations\ObjectManager\Config\Reader\Dom" />
+    <type name="Magento\Framework\Event\Config\Converter">
+        <plugin name="Fom_Annotations::DisableObserversAfterConvert" type="Fom\Annotations\Plugin\Magento\Framework\Event\Config\Converter\DisableObserversAfterConvertPlugin" />
+    </type>
+    <type name="Fom\Annotations\Model\AttributeReader">
+        <arguments>
+            <argument name="ignoredNames" xsi:type="array">
+                <item name="FIXME" xsi:type="string">FIXME</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
