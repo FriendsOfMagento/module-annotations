@@ -1,6 +1,6 @@
-[![M2 Coding Standard](https://github.com/DmitryFurs/module-annotations/actions/workflows/coding-standard.yml/badge.svg?branch=develop)](https://github.com/DmitryFurs/module-annotations/actions/workflows/coding-standard.yml)
-[![M2 Mess Detector](https://github.com/DmitryFurs/module-annotations/actions/workflows/mess-detector.yml/badge.svg?branch=develop)](https://github.com/DmitryFurs/module-annotations/actions/workflows/mess-detector.yml)
-[![M2 PHPStan](https://github.com/DmitryFurs/module-annotations/actions/workflows/phpstan.yml/badge.svg?branch=develop)](https://github.com/DmitryFurs/module-annotations/actions/workflows/phpstan.yml)
+[![M2 Coding Standard](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/coding-standard.yml/badge.svg?branch=develop)](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/coding-standard.yml)
+[![M2 Mess Detector](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/mess-detector.yml/badge.svg?branch=develop)](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/mess-detector.yml)
+[![M2 PHPStan](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/phpstan.yml/badge.svg?branch=develop)](https://github.com/FriendsOfMagento/module-annotations/actions/workflows/phpstan.yml)
 # Annotations for Magento 2
 
 During the development of extensions, we often encounter a situation where some [plugin](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html) or [observer](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html) should be executed only on certain Magento versions and Magento editions. To solve this problem, we usually inject `\Magento\Framework\App\ProductMetadataInterface` and then use additional checks for versions and editions.
